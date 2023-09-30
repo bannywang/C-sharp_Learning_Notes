@@ -1,2 +1,2 @@
-# C-sharp_Learning_Notes
-這邊放我學習C#的筆記
+# Python_Learning_Notes
+這邊放我學習 Python 的筆記
