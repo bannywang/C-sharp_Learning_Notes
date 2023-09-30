@@ -1,12 +1,62 @@
 # Python_Learning_Notes
 這邊放我學習 Python 的筆記
 
+---
+
 #基礎學習
 
-- 基礎語法
-- 熟悉變量
-- 資料類型
-- 控制結構
+1. 基礎語法 (變數、資料類型、運算符、條件語句、迴圈)
+  
+**在 Python 中，不用特別宣告該變數的資料類型，當我賦值時，Python 會自動判斷類型。**
+ 
+  ``` python
+  # 變數 & 賦值 -----------
+  x = 5 #整數
+  y = 'Python' or "Python" #字串 (單引或雙引皆可)
+
+  # 資料類型 -----------
+  1.整數 (int) 例：1,2,3,4,999
+  2.浮點數 (float) 例：1.5 & 3.14
+  3.字串 (str) 例：'HEllo World' & "Python" 
+  4.布林值 (bool) 例：True or False
+
+  # 運算符 -----------
+  a = 10
+  b = 20
+
+  c = a + b     # 加法
+  d = a - b     # 減法
+  e = a * b     # 乘法
+  f = a / b     # 除法
+  g = a % b     # 取餘數
+  h = a ** 2    # 指數
+
+  # 條件語句 -----------
+  if a > b:
+    print 'a比b大'
+elif a < b:
+    print 'a比b小'
+elif:
+    print '一樣大'
+
+  # 條件語句 (for & while) -----------
+
+  #for
+  for i in range(5):
+    print (i)
+
+  #while
+  j = 0
+  while j < 5:
+    print (j)
+    j+=1
+
+  ```
+
+- 函式
+- 列表、字典
+- 模組、套件
+- 物件導向程式設計
 
 #實際應用
 
