@@ -36,4 +36,21 @@ b = 20
 
 # User Input --------------------------------------------------------
 # name = input('Hello, what is your name?  ')
-# print('Hi, ', name)
+# print('Hello, ', name)
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+# print('%d %% %d = %d' % (a, b, a % b))
+
+# 溫度轉換
+# c = float(input('請輸入攝氏溫度：'))
+# f = (c * 9/5 +32)
+# print('%d 攝氏度 = %d 華氏度'%(c,f))
+
+# 計算周長
+q = float(input('請輸入圓的半徑'))
+a = q * q * 3.14
+c = q * 2 * 3.14
+print('半徑為 %.2f 的面積為 %.2f' % (q,a))
+print('半徑為 %.2f 的周長 = %.2f' % (q,c))
+
