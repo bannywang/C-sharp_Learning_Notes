@@ -79,13 +79,126 @@ print('%d + %d = %d' % (a, b, a + b))
 
 # input會獲取使用者輸入的值會回傳 str型態，再用int()包起來改成數字， %d為佔位符，表示整數，將括號中的值替換到佔位符中。
 ```
+## 分支結構
 
+``` python 
+#if 的使用
+user_name = input('請輸入使用者名稱：')
+password = input('請輸入密碼：')
 
+if user_name == 'banny' and password == '123456':
+  print('登入成功')
+else : 
+  print('登入失敗')
 
-- 函式
+# 練習
+score = int(input('請輸入成績：'))
+
+if score >= 90:
+    grade = 'a'
+    note = '90分以上乖寶寶'
+
+elif score >= 80:
+    grade = 'b'
+    note = '80以上不錯唷'
+
+elif score >= 70:
+    grade = 'c'
+    note = '有待加強'
+else:
+    grade = 'd'
+    note = '87'
+
+print('你的等級是%s，評價為%s' % (grade, note))
+```
+## 循環結構
+
+### for in 迴圈
+如果明確的知道要執行的次數或要對一個容器進行迭代，推薦使用 for-in迴圈
+``` python
+
+# range(stop)：從0開始，到stop-1結束
+# range(start, stop) 從 start 開始，到stop-1結束
+# range(start, stop, step) step為每次增加的數
+
+# 計算 1+2+3+...+100
+sum = 0
+for i in range(101):
+    sum += i
+print(sum)
+
+#計算 1到100的偶數和
+sum = 0
+for i in range(2, 101, 2):
+    sum += i
+print(sum)
+
+#可以加上 if 判斷 
+sum = 0
+for i in range(2, 101, 2):
+    if i % 2 == 0:
+        sum += i
+print(sum)
+```
+### while 迴圈
+如果不知道具體迴圈次數的的迴圈結構，可以使用 while 迴圈，while透過可以產生bool值來控制，true會繼續迴圈，false會結束迴圈。
+``` python
+# 引入隨機數產生模組
+import random
+
+# 隨機產生1~100的隨機放到answer中
+answer = random.randint(1, 100)
+counter = 0 #次數預設為0
+
+while True:
+    counter += 1  #進到迴圈次數+1
+    number = int(input('請輸入: '))
+    if number < answer:
+        print('大一點')
+    elif number > answer:
+        print('小一點')
+    else:
+        print('恭喜你猜對了!')
+        break
+print('你總共猜了%d次' % counter)
+if counter > 7:
+    print('你的智商明顯不足')
+```
+### 99乘法表練習
+``` python
+for i in range(2, 10):
+    for j in range(1, 10):
+        print('%d*%d=%d ' % (i, j, i*j), end='\t')
+    print()
+```
+
+## 函式和模組的使用
+
+### 函數的使用
+
+```python
+
+def function_name(parameters):
+  # parameters + ?
+  return value
+
+# 例
+def hello(name):
+  print('hello ' + name)
+  return name
+```
+
+### 模組的使用
+
+```python
+
+#如果同名時可以放在不同檔案用 import 的方式引入。
+```
+
+<!-- - 函式
 - 列表、字典
 - 模組、套件
-- 物件導向程式設計
+- 物件導向程式設計 -->
 
 #實際應用
 
